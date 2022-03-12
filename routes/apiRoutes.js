@@ -11,7 +11,7 @@ router.get("/api/notes", (req,res)=>{
     })
 })
 
-
+//creates a note and adds it to the array of objects in db.json
 router.post("/api/notes", (req,res)=>{
     fs.readFile("db/db.json", "utf8", (err, data)=>{
         if(err) throw err;
@@ -29,6 +29,7 @@ router.post("/api/notes", (req,res)=>{
     })
 } )
 
+//removes it from the array of objects
 router.delete("/api/notes/:id", (req,res)=>{
     fs.readFile("db/db.json", "utf8", (err,data)=>{
         if(err) throw err;

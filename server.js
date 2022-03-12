@@ -15,4 +15,4 @@ app.use(htmlRoutes)
 
 
 
-app.listen(PORT, ()=> console.log(`Listening on https:\\localhost:${PORT}`))
+app.listen(PORT, ()=> console.log(`Listening on http://localhost:${PORT}`))
